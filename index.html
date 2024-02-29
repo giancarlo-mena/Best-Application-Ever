@@ -1,10 +1,18 @@
-<h1>{{.PageTitle}}</h1>
+<!DOCTYPE html>
+<html lang="en" xmlns:hx-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <h1>{{.PageTitle}}</h1>
 
-<h3>{{.Description}}</h3>
+    <h3>{{.Description}}</h3>
 
-<label>
-    <input type="text">
-    <button>Submit</button>
-</label>
-
-<h3>{{.Answer}}</h3>
+    <label>
+        <input type="text">
+        <button hx-on:click="alert('Hello World!')">Submit</button>
+    </label>
+</body>
+</html>
